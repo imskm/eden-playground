@@ -116,11 +116,11 @@ fn edent_start_button(props: &EdenStartButtonProps) -> Html {
 	// let window = window().expect_throw("Window is undefined").window();
 	let screen = window().expect_throw("Window is undefined").screen().expect_throw("screen is undefined");
 	// let viewport = xr_viewport().expect_throw("xr viewport not found");
+	let w = screen.width().unwrap();
 	console::log_1(&screen.into());
 	// console::log_1(&window.into());
-	let w = screen.width().to_string();
-	// let x = format!("{}", w);
-	// console::log_1(&x.into());
+	let x = format!("{}", w);
+	console::log_1(&x.into());
 
 	let t = props.on_click_edenstartbutton.clone();
 	let onclick = {
@@ -189,8 +189,8 @@ fn app_controls() -> Html {
 fn App() -> Html {
 	html! {
 		<div>
-			<canvas class="canvas"></canvas>
-			// <div style="height: 100vh; background: url('https://images.unsplash.com/photo-1546552768-2e5b568b0680?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80'); background-size: cover; background-position: center;"></div>
+			// <canvas class="canvas"></canvas>
+			<div style="height: 100vh; background: url('https://images.unsplash.com/photo-1546552768-2e5b568b0680?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80'); background-size: cover; background-position: center;"></div>
 			<AppControls />
 		</div>
 	}

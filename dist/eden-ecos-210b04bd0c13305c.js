@@ -592,12 +592,12 @@ function getImports() {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper4729 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 408, __wbg_adapter_16);
+    imports.wbg.__wbindgen_closure_wrapper4726 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 409, __wbg_adapter_16);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper4781 = function(arg0, arg1, arg2) {
-        const ret = makeMutClosure(arg0, arg1, 428, __wbg_adapter_19);
+    imports.wbg.__wbindgen_closure_wrapper4778 = function(arg0, arg1, arg2) {
+        const ret = makeMutClosure(arg0, arg1, 429, __wbg_adapter_19);
         return addHeapObject(ret);
     };
 
@@ -635,7 +635,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('eden-ecos-1798ed0b1ecf8851_bg.wasm', import.meta.url);
+        input = new URL('eden-ecos-210b04bd0c13305c_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
